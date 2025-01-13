@@ -1,0 +1,48 @@
+1. What type would you choose for the following “numbers”?
+A person’s telephone number
+    I would use strings since the numbers itself has no meaning and might be ruined in regular number forms since phone numbers can have zeros at the front and mess up things
+    
+A person’s height
+    I would probably use a float since height can be measured with inches or centimeters and would need decimal places. I also would choose floats over doubles since people grow and shrink whether its morning or night and that error/change is larger than the precision provided by doubles.
+
+A person’s age
+    I would just use int for age since age is always a whole number.
+
+A person’s gender (Male, Female, Prefer Not To Answer)
+    In this case we have 3 distinct choices so an enumerated type allows us to specify these distinctions.
+
+A person’s salary
+    I would use a decimal and not a float since a float is represented using binary representation so it can skip over cents that magnify errors since slary is multiplied with hours worked and can make a massive error.
+
+A book’s ISBN
+    Similar to a phone number, it can have leading zeros so I would use a string
+
+A book’s price
+    Similar to salary where final prices errors can be exemplified by order amount, so I would use decimal
+
+A book’s shipping weight
+    Similar to book price and salary where books are most likely shipped in bulk, I would use decimal since errors can be multiplied.
+
+A country’s population
+    A long since it is a whole number, but an int might not cut it especially with how big populations are growing we can exceed the 2 billion maximum of a regular integer. Maybe instead of a long we could go with unsigned ints, with a 4 billion maximum size.
+
+The number of stars in the universe
+    A long for sure, but it might be better to make a list of longs and break up the universe in quadrants and etc.
+
+The number of employees in each of the small or medium businesses in the
+United Kingdom (up to about 50,000 employees per business)
+    An int or unsigned int for this.
+
+2. What are the difference between value type and reference type variables? What is
+boxing and unboxing?
+Value types are the sort of fixed types or like built in types which directly holds the value it has. Because it directly holds the value it means that when it is passed in as an input to a method or when another variable = to it, then they take and copy the value. Value types are also made and removed with the stack pointer so there's no garbage collecting. Reference types are where the variable holds the memory address where the rest of the value or data is at. So when it is passed into a method or when another variable = a reference type, it passes the memory address or reference so all edits to it will edit the original copy. Because it only holds the memory address it means movement from the stack pointer will not remove the value at the heap, and so extra resources like the garbage collector is needed to free/deallocate the memory.
+
+Boxing and unboxing are sort of like java wrapper classes, but can be more broad. They in essence can convert a value type into a reference (boxing) and undo the reference to a value type (unboxing). This is useful if we have an application which expects only objects like an array or something.
+
+3. What is meant by the terms managed resource and unmanaged resource in .NET
+Managed resources are resources that are automatically taken care of through the garbage collector. So it automatically recognizes when a resource is not used anymore and then frees or deallocates it. 
+
+Unmanaged resources are resources that require manual control on the lifetime of the objects or it can cause memory leaks. 
+
+4. Whats the purpose of Garbage Collector in .NET?
+The garbage collector automatically frees/deallocates the memory in heap for reference type objects that are not used anymore. Since it is automatic, it does not require any manual work when an object is done being used.

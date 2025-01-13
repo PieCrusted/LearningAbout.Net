@@ -1,0 +1,34 @@
+1. What happens when you divide an int variable by 0?
+This will throw an exception since we cannot divide by 0.
+
+2. What happens when you divide a double variable by 0?
+A double or float that gets divide by zero will either return +/- infinity or NaN on (0 / 0).
+
+3. What happens when you overflow an int variable, that is, set it to a value beyond its
+range?
+It will wrap around to the other side since ints are implemented in 2's complement so on lets say we have a 4 bit number 0111 or 7, add 1 and it will become 1000 or -8. Same thing for the other side so if we have 1000 or -8 and subtract 1 (by adding 1111) we will get 0111 or 7.
+
+4. What is the difference between x = y++; and x = ++y;?
+y++ will keep the old y value in the equation while adding 1 to y, but the new y isn't used. On the otherside ++y will first add 1 to y and then the new y is used in the equation.
+
+5. What is the difference between break, continue, and return when used inside a loop
+statement?
+break, break out of the loop
+continue, finish this iteration and go to the next iteration
+return, return from the current function
+
+6. What are the three parts of a for statement and which of them are required?
+There are 3 parts, the initilization, the comparator/conditional statement, and the step. A for loop really only needs the conditional staement so something like for (; i < 50; ) {} is allowed.
+
+7. What is the difference between the = and == operators?
+Single = is an assignment operator which if it is assigning a value typed it will assign the new variable a copy of the value while in a reference type it will assign the new variable the memory reference. Double == checks for comparison so if 2 value types are the same then it returns true. In reference types it will compare the memory reference and return true if both variables hold the same reference.
+
+8. Does the following statement compile? for ( ; true; ) ;
+It will compile, but it will result in an infinite loop.
+
+9. What does the underscore _ represent in a switch expression?
+Underscore acts like a wildcard so it can be anything there and it will satisfy it. So this is similar to the default option if it doesn't satisfy any of them. 
+
+10. What interface must an object implement to be enumerated over by using the foreach
+statement?
+It must implement the IEnumerable interface.
