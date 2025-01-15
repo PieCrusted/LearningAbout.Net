@@ -1,0 +1,20 @@
+1. When to use String vs. StringBuilder in C#?
+Strings are immutable meaning they naturally cannot be edited or changed. StringBuilder objects allow editing capabilities to function as a string. Even though there is built in string concatenation through "" + "", it creates a new string each time. On the other hand StringBuilder allows editing the contents without creating new strings each time.
+
+2. What is the base class for all arrays in C#?
+Not sure what this question is asking either it asking for the "parent", so all arrays in C are Array objects, or if its like the base class is the type the arrays can store since arrays can only store all of the same type like int[] or string[] or even object[].
+
+3. How do you sort an array in C#?
+You can use the built in Array.sort(arr); which will go in ascending order. You can also do like in Java lamdba expressions like Array.sort( arr, (a, b) =>
+    a.compareTo(b)
+); to sort it descending (might have mixed up a and b and maybe syntax is wrong).
+
+4. What property of an array object can be used to get the total number of elements in
+an array?
+The property is Length so you can use arr.Length.
+
+5. Can you store multiple data types in System.Array?
+Technically no, it will only be of 1 type, however through inheritance, you can put child class objects in an array set for parent type objects.
+
+6. What’s the difference between the System.Array.CopyTo() and System.Array.Clone()?
+CopyTo() will copy the elements of one array into another array that's the same or more size of the original array through arrSrc.CopyTo(arrDest). On the other hand, clone will make a new array that is a clone of the source so to set it would be like string[] arr2 = (string[])arrSrc.Clone();
