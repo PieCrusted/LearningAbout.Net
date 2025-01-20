@@ -8,5 +8,12 @@ class Program {
         ArrayReversalMethods.Reverse(numbers);
         ArrayReversalMethods.PrintNumbers(numbers);
         
+        // Fibonacci
+        int n = 100;
+        Console.WriteLine($"The first {n} fibonacci sequence");
+        for (int i = 1; i <= 100; i++) {
+            Console.Write(Fibonacci.Fibo(i) + " ");
+        }
+        
     }
 }

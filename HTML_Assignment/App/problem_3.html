@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 3 - Nested Tables</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        td,
+        th {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .outer-table {
+            width: 100%;
+        }
+
+        .inner-table {
+            width: 100%;
+        }
+
+        .logo-container {
+            text-align: left;
+            padding: 5px;
+            background-color: navy;
+            display: inline-block;
+        }
+
+        .logo-container a {
+            display: inline-block;
+        }
+
+        .logo-container img {
+            max-width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table class="outer-table">
+        <tr>
+            <td style="width: 50%;">
+                <div class="logo-container">
+                    <a href="https://antra.net/" target="_blank">
+                        <img src="https://antra.com/wp-content/uploads/2024/12/Antra-white-2048x683.png"
+                            alt="Antra Logo">
+                    </a>
+                </div>
+            </td>
+            <td style="width: 50%;">
+                <table class="inner-table">
+                    <tr>
+                        <td style="text-align: center;">
+                            Software
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            Developer
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

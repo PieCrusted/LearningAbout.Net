@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 4 & 5 - Life in Antra</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #e0e0e0;
+            color: black;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #d1d1d1;
+        }
+        .logo-container {
+            text-align: center;
+            background-color: navy;
+            padding: 5px;
+        }
+        .logo-container img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        .nested-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .nested-table td {
+            border: none;
+        }
+        .nested-table-row1 td {
+            width: 50%;
+        }
+        .nested-table-row2 td {
+            width: 25%;
+        }
+        .nested-table-row3 td:first-child {
+            width: 20%;
+        }
+        .nested-table-row3 td:last-child {
+            width: 20%;
+        }
+        .nested-table-row4 td:first-child {
+            width: 75%;
+        }
+        .nested-table-row4 td:last-child {
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+             <td colspan="4" class="logo-container">
+                <img src="https://antra.com/wp-content/uploads/2024/12/Antra-white-2048x683.png" alt="Antra Logo">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <table class="nested-table nested-table-row1">
+                    <tr>
+                        <td><button onclick="window.open('https://www.google.com', '_blank')">Google</button></td>
+                        <td><button onclick="window.open('https://github.com', '_blank')">GitHub</button></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <table class="nested-table nested-table-row2">
+                    <tr>
+                        <td><button onclick="window.open('https://www.facebook.com', '_blank')">Facebook</button></td>
+                        <td><button onclick="window.open('https://mail.google.com', '_blank')">GMail</button></td>
+                        <td><button onclick="window.open('https://www.youtube.com', '_blank')">YouTube</button></td>
+                        <td><button onclick="window.open('https://play2048.co/', '_blank')">2048</button></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <table class="nested-table nested-table-row3">
+                    <tr>
+                        <td><button onclick="window.open('https://www.allrecipes.com/', '_blank')">Food</button></td>
+                        <td><button onclick="window.open('https://www.leagueoflegends.com/en-us/news/tags/patch-notes/', '_blank')">Game</button></td>
+                        <td colspan="2">
+                             <table class="nested-table">
+                                  <tr>
+                                    <td><button onclick="window.open('https://www.instagram.com/', '_blank')">Social Life</button></td>
+                                    </tr>
+                                    <tr>
+                                     <td><button onclick="window.open('https://www.sleepfoundation.org/', '_blank')">Sleep</button></td>
+                                    </tr>
+                                </table>
+                            </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <table class="nested-table nested-table-row4">
+                    <tr>
+                        <td><button onclick="window.open('https://www.beeradvocate.com/', '_blank')">Beer >></button></td>
+                        <td><button onclick="window.open('https://www.cdc.gov/healthywater/hygiene/toileting.html', '_blank')">WC</button></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
