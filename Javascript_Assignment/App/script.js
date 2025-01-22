@@ -1,32 +1,32 @@
 // Problem 1
 let salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130
+    John: 100,
+    Ann: 160,
+    Pete: 130
 };
 
 let sum = 0;
 
 for (let key in salaries) {
-  sum += salaries[key];
+    sum += salaries[key];
 }
 
 console.log(sum);
 
 // Problem 2
 function multiplyNumeric(obj) {
-  for (let key in obj) {
-    if (typeof obj[key] === 'number') {
-      obj[key] *= 2;
+    for (let key in obj) {
+        if (typeof obj[key] === 'number') {
+            obj[key] *= 2;
+        }
     }
-  }
 }
 
 // Example usage:
 let menu = {
-  width: 200,
-  height: 300,
-  title: "My menu"
+    width: 200,
+    height: 300,
+    title: "My menu"
 };
 
 multiplyNumeric(menu);
@@ -45,31 +45,31 @@ console.log(menu);
 // Problem 3
 function checkEmailId(str) {
 	// Handle non-string inputs
-  if (typeof str !== 'string') {
-    return false;
-  }
+    if (typeof str !== 'string') {
+        return false;
+    }
 
-  const lowerStr = str.toLowerCase();
-  const atIndex = lowerStr.indexOf('@');
-  const dotIndex = lowerStr.indexOf('.');
+    const lowerStr = str.toLowerCase();
+    const atIndex = lowerStr.indexOf('@');
+    const dotIndex = lowerStr.indexOf('.');
 
-  // If there's no @ or .
-  if (atIndex === -1 || dotIndex === -1) {
-    return false;
-  }
+    // If there's no @ or .
+    if (atIndex === -1 || dotIndex === -1) {
+        return false;
+    }
 
-  // '@' comes after '.' or is at the same position
-  if (atIndex >= dotIndex) {
-     return false;
-  }
+    // '@' comes after '.' or is at the same position
+    if (atIndex >= dotIndex) {
+         return false;
+    }
 
-  // No character between '@' and '.'
-  if (dotIndex - atIndex <= 1){
-    return false;
-  }
+    // No character between '@' and '.'
+    if (dotIndex - atIndex <= 1){
+        return false;
+    }
 
-  // All conditions are met
-  return true;
+    // All conditions are met
+    return true;
 }
 
 console.log(checkEmailId("hello@world.com")); // true
@@ -83,11 +83,11 @@ console.log(checkEmailId(123)); //false (non string input)
 
 // Problem 4
 function truncate(str, maxlength) {
-  if (str.length <= maxlength) {
-    return str;
-  } else {
-    return str.slice(0, maxlength - 3) + "...";
-  }
+    if (str.length <= maxlength) {
+        return str;
+    } else {
+        return str.slice(0, maxlength - 3) + "...";
+    }
 }
 
 console.log(truncate("1234567890|1234567890|1234567890", 20));

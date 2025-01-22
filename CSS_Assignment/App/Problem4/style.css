@@ -1,0 +1,146 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+}
+
+.pretty-website {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.pretty-header-top-image {
+        width: 100%;
+        height: auto;
+        display: block;
+}
+
+.pretty-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: orange; /* Changed header background to orange */
+}
+
+.pretty-logo-link {
+    display: block;
+}
+
+.pretty-logo {
+    max-height: 40px;
+}
+
+.pretty-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.pretty-nav li {
+    background-color: #c8e6c9;
+}
+
+.pretty-nav a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+     padding: 10px 15px;
+}
+
+.pretty-nav .home-tab {
+        background-color: darkgreen;
+}
+
+.pretty-nav .home-tab a {
+        color: white;
+}
+
+.pretty-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pretty-content, .pretty-news, .pretty-products, .pretty-messages {
+    width: 48%;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.pretty-content h2, .pretty-news h2, .pretty-products h2, .pretty-messages h2 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+.pretty-news-article h3{
+    margin-top: 0;
+}
+
+.pretty-news-article a {
+    text-decoration: none;
+    color: #555;
+}
+
+.pretty-news-article a:hover {
+    text-decoration: underline;
+}
+
+.pretty-product-article {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.pretty-product-image {
+    max-width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.pretty-product-article table {
+    width: 100%;
+}
+
+.pretty-product-article table td {
+        padding: 0;
+}
+
+.pretty-message-article h3, .pretty-message-article p{
+    margin-top: 0;
+}
+
+.pretty-message-article a {
+     text-decoration: none;
+    color: #555;
+}
+
+.pretty-message-article a:hover {
+     text-decoration: underline;
+}
+
+.pretty-copyright {
+    text-align: left;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    margin-top: auto;
+        width: 100%;
+        padding-left: 10px;
+}
+
+.pretty-copyright a {
+     text-decoration: none;
+    color: #555;
+}
+
+.pretty-copyright a:hover {
+     text-decoration: underline;
+}
